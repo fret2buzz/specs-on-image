@@ -26,6 +26,8 @@ Windows: `Shift+Ctrl+R`
 ### Usage
 
 1. Create a rectangular selection with Rectangular Marquee Tool (M) and use your shortcut (see Install section).
-2. `Shift+Ctrl+W`
-3. Rename Layer. Example `Spec-Description` *Important*: use `-` minus character to separate spec name and description
-4. `Shift+Ctrl+W` Choose file name `01.html` and destination and save the file
+2. `Shift+Ctrl+W`.
+3. Rename Layer. Example `Spec-Description` *Important*: use `-` minus character to separate spec name and description.
+4. `Shift+Ctrl+R`. Choose file name `news-card.html` and destination and save the html file. 
+
+Now you have news-card.html with spec titles over the image. The original image is not changed, hence there is no duplicates.
