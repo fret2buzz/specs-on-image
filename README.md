@@ -10,11 +10,11 @@ Windows: `C:\[Program Files]\Adobe\[Photoshop]\Presets\Scripts`
 `File ▸ Scripts ▸ widthXheightSave`.
 3. Next, let’s make a shortcut. `Edit ▸ Keyboard Shortcuts...`
 e.g.
-- for widthXheight
+for widthXheight
 OS X: `Shift+Cmd+W`
 Windows: `Shift+Ctrl+W`
 
-- for widthXheightSave
+for widthXheightSave
 OS X: `Shift+Cmd+R`
 Windows: `Shift+Ctrl+R`
 
@@ -23,5 +23,5 @@ Windows: `Shift+Ctrl+R`
 
 1. Create a rectangular selection with Rectangular Marquee Tool (M) and use your shortcut (see Install section).
 2. `Shift+Ctrl+W`
-3. Rename Layer. Example `Spec-Description` *Important*-: use `-` minus character to separate spec name and description
+3. Rename Layer. Example `Spec-Description` *Important*: use `-` minus character to separate spec name and description
 4. `Shift+Ctrl+W` Choose file name `01.html` and destination and save the file
