@@ -17,7 +17,7 @@ for (var i = 0; i < numOfLayers-1  ; i++)
 var lastLayer = srcDoc.layers[numOfLayers-1];
 var imageWidth = parseFloat(lastLayer.bounds[2]) - parseFloat(lastLayer.bounds[0]);
 
-var header ='<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>Reebok mobile | Font update</title> <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script> <script type="text/javascript" src="js/script.js"></script>  <link rel="stylesheet" href="css/styles.css"> </head> <body> <div class="container" style="width: '+imageWidth+'px;"> <h1>'+docName+'</h1> <ul class="actions"> <li id="showAll"><span>Show all</span></li> <li id="hideAll" class="active"><span>Hide all</span></li> </ul> <div class="prototype"> <img src="images/'+docName+'.png" alt="image"> <ul class="list">\n'
+var header ='<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>Specs | '+docName+'</title> <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script> <script type="text/javascript" src="js/script.js"></script>  <link rel="stylesheet" href="css/styles.css"> </head> <body> <div class="container" style="width: '+imageWidth+'px;"> <h1>'+docName+'</h1> <ul class="actions"> <li id="showAll"><span>Show all</span></li> <li id="hideAll" class="active"><span>Hide all</span></li> </ul> <div class="prototype"> <img src="images/'+docName+'.png" alt="image"> <ul class="list">\n'
 var footer ='</ul></div> </div> </body> </html>'
 html = header + results + footer;
 
