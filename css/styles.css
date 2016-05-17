@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    background: #ddd;
 }
 
 *,
@@ -37,36 +38,105 @@ body {
 }
 
 .list li {
+    cursor: pointer;
     position: absolute;
     font-size: 0;
     background: rgba(255,0,255,0);
-    border: 1px solid  rgba(255,0,255,1);
+    border: 2px solid  rgba(255,0,255,1);
+    border-radius: 9999px;
 }
 
-.list li:hover {
-    background: rgba(255,0,255,0.1);
-}
-
-.list li:hover:after {
-    background: #025f8e;
+.list li.size {
+    border: 0;
+    background: rgba(255,0,255,1);
+    border-radius: 0;
 }
 
 .list li:after {
-    content: attr(title);
+    content: '';
     position: absolute;
-    background: #0286cd;
-    color: #fff;
-    padding: 7px;
-    top: -1px;
-    font-size: 14px;
-    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    width: 40%;
+    height: 40%;
+    border-radius: 9999px;
+    background: rgba(255,0,255,1);
+    transform: translate(-50%, -50%);
+}
+
+.list li.size:after {
+    display: none;
+}
+
+.list li span {
+    display: none;
+    position: absolute;
+    background: #ffffcc;
+    color: #333;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    padding: 4px 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 11px;
     white-space: nowrap;
 }
 
-.list li.pos-left:after {
-    right: 100%;
+.list li.active span {
+    display: block;
 }
 
-.list li.pos-right:after {
-    left: 100%;
+.list li span:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffffcc;
+    top: 50%;
+    margin: -5px 0 0;
+    transform: rotate(-45deg);
+}
+
+.list li.pos-left span {
+    margin-left: -25px;
+    right: 140%;
+}
+
+.list li.pos-left span:after {
+    right: -5px;
+}
+
+.list li.pos-right span {
+    left: 140%;
+}
+
+.list li.pos-right span:after {
+    left: -5px;
+}
+
+.actions {
+    list-style: none;
+    padding: 0 0 20px;
+    margin: 0;
+}
+
+.actions li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #0033ff;
+}
+
+.actions li span {
+    border-bottom: 1px dotted #0033ff;
+}
+
+.actions li.active {
+    color: #333;
+    background: #ffffcc;
+    cursor: default;
+}
+
+.actions li.active span {
+    border-bottom: 1px solid rgba(0,0,0,0);
 }
