@@ -9,6 +9,7 @@ Windows: `C:\[Program Files]\Adobe\[Photoshop]\Presets\Scripts`
 `File ▸ Scripts ▸ widthXheight`,
 `File ▸ Scripts ▸ widthXheightSave`.
 3. Next, let’s make a shortcut. `Edit ▸ Keyboard Shortcuts...`
+
 e.g.
 for widthXheight
 OS X: `Shift+Cmd+W`
