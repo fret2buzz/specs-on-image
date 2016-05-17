@@ -8,7 +8,7 @@ Specs on Image is a Photoshop script for web designers and front-end engineers
 1. Place .jsx files in the Photoshop Scripts folder. If you have more than one version of Photoshop, place the script in the Scripts folder of each version.
 OS X: `/Applications/[Photoshop]/Presets/Scripts/`
 Windows: `C:\[Program Files]\Adobe\[Photoshop]\Presets\Scripts`
-2. Restart Photoshop. The script should now be available in 
+2. Restart Photoshop. The scripts should now be available in 
 `File ▸ Scripts ▸ widthXheight`,
 `File ▸ Scripts ▸ widthXheightSave`.
 3. Next, let’s make a shortcut. `Edit ▸ Keyboard Shortcuts...`
@@ -30,4 +30,4 @@ Windows: `Shift+Ctrl+R`
 3. Rename Layer. Example `Spec-Description` *Important*: use `-` minus character to separate spec name and description.
 4. `Shift+Ctrl+R`. Choose file name `news-card.html` and destination and save the html file. 
 
-Now you have news-card.html with spec titles over the image. The original image is not changed, hence there is no duplicates.
+Now you have news-card.html with spec titles over the image. The original image is not changed.
