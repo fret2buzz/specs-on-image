@@ -1,4 +1,7 @@
 # specs-on-image
+
+<img src="description.png" title="specs on image">
+
 Specs on Image is a Photoshop script for web designers and front-end engineers
 
 ### Install
