@@ -1,0 +1,72 @@
+html,
+body {
+    height: 100%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    min-width: 1000px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 0 2em;
+    position: relative;
+}
+
+.prototype {
+    position: relative;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.list li {
+    position: absolute;
+    font-size: 0;
+    background: rgba(255,0,255,0);
+    border: 1px solid  rgba(255,0,255,1);
+}
+
+.list li:hover {
+    background: rgba(255,0,255,0.1);
+}
+
+.list li:hover:after {
+    background: #025f8e;
+}
+
+.list li:after {
+    content: attr(title);
+    position: absolute;
+    background: #0286cd;
+    color: #fff;
+    padding: 7px;
+    top: -1px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.list li.pos-left:after {
+    right: 100%;
+}
+
+.list li.pos-right:after {
+    left: 100%;
+}
