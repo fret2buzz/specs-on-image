@@ -39,7 +39,7 @@ function getLayerBounds(alayer)
 	
 	layerName = layerName.split(";");
 	if(layerName[0] == 'size'){
-		if(w>h){
+		if(w>=h){
 			size = w;
 			h = 10;
 		} else {
@@ -48,7 +48,7 @@ function getLayerBounds(alayer)
 		}
 		return '<li style="width: ' +  w + 'px; height: ' + h + 'px; top: '+ y1 +'px; left: '+ x1 +'px;" class="size '+layerName[2]+'">'+layerName[1]+'<span>'+size+'px</span></li>';
 	} else {
-		return '<li style="width: ' + 20 + 'px; height: ' + 20 + 'px; top: '+ y1 +'px; left: '+ x1 +'px;" class="'+layerName[2]+'">'+layerName[1]+'<span>'+layerName[0]+'</span></li>';
+		return '<li style="width: ' + 24 + 'px; height: ' + 24 + 'px; top: '+ y1 +'px; left: '+ x1 +'px;" class="'+layerName[2]+'">'+layerName[1]+'<span>'+layerName[0]+'</span></li>';
 	};
 	
 }

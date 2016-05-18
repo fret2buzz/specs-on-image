@@ -10,6 +10,17 @@ $( document ).ready(function() {
         });
     };
 
+    hotspot.find('span').each(function(){
+        var parentLi = $(this).parent('li');
+        var position = parentLi.width()+10;
+        if(parentLi.hasClass('pos-right')){
+            $(this).css('left', position+'px');
+        };
+        if(parentLi.hasClass('pos-left')){
+            $(this).css('right', position+'px');
+        };
+    });
+
     clicked(hotspot);
     clicked(actionItem);
 

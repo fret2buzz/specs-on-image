@@ -1,6 +1,7 @@
 html,
 body {
-    height: 100%;
+    margin: 0;
+    padding: 0;
     background: #ddd;
 }
 
@@ -13,7 +14,6 @@ body {
 body {
     font-family: Tahoma, sans-serif;
     font-size: 12px;
-    min-width: 1000px;
 }
 
 .container {
@@ -96,17 +96,8 @@ body {
     transform: rotate(-45deg);
 }
 
-.list li.pos-left span {
-    margin-left: -25px;
-    right: 140%;
-}
-
 .list li.pos-left span:after {
     right: -5px;
-}
-
-.list li.pos-right span {
-    left: 140%;
 }
 
 .list li.pos-right span:after {
