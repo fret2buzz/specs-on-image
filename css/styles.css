@@ -81,6 +81,10 @@ body {
     white-space: nowrap;
 }
 
+.list li.active {
+    z-index: 100;
+}
+
 .list li.active span {
     display: block;
 }
