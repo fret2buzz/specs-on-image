@@ -5,24 +5,21 @@
 Specs on Image is a Photoshop script for web designers and front-end engineers
 
 ### Install
-1. Place .jsx files in the Photoshop Scripts folder. If you have more than one version of Photoshop, place the script in the Scripts folder of each version.
+1. Load into Photoshop 'specOnImage.atn' action
+2. Place .jsx files in the Photoshop Scripts folder. If you have more than one version of Photoshop, place the script in the Scripts folder of each version.
 OS X: `/Applications/[Photoshop]/Presets/Scripts/`
 Windows: `C:\[Program Files]\Adobe\[Photoshop]\Presets\Scripts`
 2. Restart Photoshop. The scripts should now be available in 
 `File ▸ Scripts ▸ widthXheight`,
 `File ▸ Scripts ▸ widthXheightSave`.
 3. Next, let’s make a shortcut. `Edit ▸ Keyboard Shortcuts...`
-
 e.g.
 for widthXheight
 OS X: `Shift+Cmd+W`
 Windows: `Shift+Ctrl+W`
-
 for widthXheightSave
 OS X: `Shift+Cmd+R`
 Windows: `Shift+Ctrl+R`
-
-4. Load into Photoshop 'specOnImage.atn' action
 
 ### Usage
 
