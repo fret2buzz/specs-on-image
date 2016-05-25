@@ -6,6 +6,8 @@ var docName = fileName.substring(0,fileName.length -4);
 var results = "";
 var html = "";
 var size = "";
+var sizeType = "";
+var sizeInline = "";
 
 for (var i = 0; i < numOfLayers-1  ; i++)
 {
@@ -41,12 +43,14 @@ function getLayerBounds(alayer)
 	if(layerName[0] == 'size'){
 		if(w>=h){
 			size = w;
-			h = 10;
+			sizeInline = 'width: ' +  w + 'px;';
+			sizeType = 'size-width';
 		} else {
 			size = h;
-			w = 10;
+			sizeInline = 'height: ' +  h + 'px;';
+			sizeType = 'size-height';
 		}
-		return '<li style="width: ' +  w + 'px; height: ' + h + 'px; top: '+ y1 +'px; left: '+ x1 +'px;" class="size '+layerName[2]+'">'+layerName[1]+'<span>'+size+'px</span></li>';
+		return '<li style="'+sizeInline+' top: '+ y1 +'px; left: '+ x1 +'px;" class="size '+layerName[2]+' '+sizeType+'">'+layerName[1]+'<span>'+size+'px</span></li>';
 	} else {
 		return '<li style="width: ' + 24 + 'px; height: ' + 24 + 'px; top: '+ y1 +'px; left: '+ x1 +'px;" class="'+layerName[2]+'">'+layerName[1]+'<span>'+layerName[0]+'</span></li>';
 	};

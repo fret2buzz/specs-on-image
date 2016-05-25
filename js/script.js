@@ -13,11 +13,18 @@ $( document ).ready(function() {
     hotspot.find('span').each(function(){
         var parentLi = $(this).parent('li');
         var position = parentLi.width()+10;
+        var positionH = parentLi.height()+10;
         if(parentLi.hasClass('pos-right')){
             $(this).css('left', position+'px');
         };
         if(parentLi.hasClass('pos-left')){
             $(this).css('right', position+'px');
+        };
+        if(parentLi.hasClass('pos-top')){
+            $(this).css('bottom', positionH+'px');
+        };
+        if(parentLi.hasClass('pos-bottom')){
+            $(this).css('top', positionH+'px');
         };
     });
 

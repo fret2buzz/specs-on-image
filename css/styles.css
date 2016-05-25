@@ -44,28 +44,47 @@ body {
     background: rgba(255,0,255,0);
     border: 2px solid  rgba(255,0,255,1);
     border-radius: 9999px;
+    transition: background 0.5s;
 }
 
 .list li.size {
     border: 0;
-    background: rgba(255,0,255,1);
+    background: 0 0;
     border-radius: 0;
 }
 
-.list li:after {
+.list li.size-width {
+    height: 11px;
+    border-left: 1px solid rgba(255,0,255,1);
+    border-right: 1px solid rgba(255,0,255,1);
+}
+
+.list li.size-height {
+    width: 11px;
+    border-top: 1px solid rgba(255,0,255,1);
+    border-bottom: 1px solid rgba(255,0,255,1);
+}
+
+.list li.size:before {
     content: '';
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 40%;
-    height: 40%;
-    border-radius: 9999px;
     background: rgba(255,0,255,1);
-    transform: translate(-50%, -50%);
 }
 
-.list li.size:after {
-    display: none;
+.list li.size-width:before {
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 5px;
+}
+
+.list li.size-height:before {
+    width: 1px;
+    height: 100%;
+    left: 5px;
+    top: 0;
 }
 
 .list li span {
@@ -74,7 +93,7 @@ body {
     background: #ffffcc;
     color: #333;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    padding: 4px 15px;
+    padding: 8px 15px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 11px;
@@ -83,6 +102,7 @@ body {
 
 .list li.active {
     z-index: 100;
+    background: rgba(255,0,255,0.2);
 }
 
 .list li.active span {
@@ -106,6 +126,28 @@ body {
 
 .list li.pos-right span:after {
     left: -5px;
+}
+
+.list li.pos-top span,
+.list li.pos-bottom span {
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.list li.pos-top span:after,
+.list li.pos-bottom span:after {
+    top: auto;
+    left: 50%;
+    margin: 0 0 0 -5px;
+}
+
+.list li.pos-top span:after {
+    bottom: -5px;
+}
+
+.list li.pos-bottom span:after {
+    top: -5px;
 }
 
 .actions {
